@@ -208,7 +208,7 @@ button a {
 }
 
 #contact-card-container {
-    margin-bottom: 100px;
+    margin-bottom: 175px;
     display: flex;
     gap: 22px;
     align-items: flex-start;
@@ -260,11 +260,13 @@ button a {
     resize: none;
 }
 
-#hours {
-    background-color: white;
-    padding: 35px 50px 32px 50px;
+#hours {}
+
+#hours-card {
     border-radius: 3px;
     width: 335px;
+    background-color: white;
+    padding: 35px 50px 32px 50px;
 }
 
 #hours h2 {
@@ -278,7 +280,7 @@ button a {
     text-align: center;
 }
 
-#days-of-the-week p{
+#days-of-the-week p {
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -286,7 +288,7 @@ button a {
     line-height: 28px;
 }
 
-#times p{
+#times p {
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -307,11 +309,81 @@ button a {
     font-style: normal;
     font-size: 14px;
 }
+
 .contact-info b {
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 14px;
+}
+
+#hours-message {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 13px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 66px;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#footer-top {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin-bottom: 15px;
+}
+
+#footer-top img {
+    height: 58px;
+}
+
+#footer-browse-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#footer-browse-section h2 {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+    opacity: 0.65;
+}
+
+#footer-browse-section a {
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+}
+
+#footer-divider {
+    border: none;
+    height: 1px;
+    width: 616px;
+    background-color: white;
+}
+
+#footer-container h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    opacity: 0.7;
+    font-size: 13px;
 }
 
 /*
