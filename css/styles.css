@@ -155,6 +155,7 @@ button a {
 
 #review-container {
     display: flex;
+    gap: 53px;
 }
 .review-card{
     margin-top: 85px;
