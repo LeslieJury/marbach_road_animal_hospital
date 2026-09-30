@@ -1,10 +1,25 @@
+/*===============================================================================================
+  COLOR VARIABLES
+================================================================================================*/
+
 :root {
     --red-color: #9D0514;
+    --red-hover-color: #B72836;
+    --red-active-color: #8C1A25;
+
     --white-color: #EFEFEF;
+    --pure-white-color: #FFFFFF;
+    --black-color: #000000;
+
     --yellow-color: #F6BE56;
 
+    --transparent-color: transparent;
 }
 
+
+/*===============================================================================================
+  RESET & GLOBAL STYLES
+================================================================================================*/
 
 * {
     margin: 0;
@@ -14,6 +29,8 @@
 
 body {
     font-family: sans-serif;
+    border: 0;
+    margin: 0;
 }
 
 img {
@@ -35,12 +52,10 @@ button {
 }
 
 
-body {
-    border: 0;
-    margin: 0;
-}
+/*===============================================================================================
+  HEADER & NAVIGATION
+================================================================================================*/
 
-/*-----------------------------------------------------------------------------------------------*/
 header {
     display: flex;
     flex-direction: row;
@@ -54,6 +69,87 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    gap: 50px;
+    align-items: center;
+}
+
+header li {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header li a {
+    color: var(--black-color);
+    text-decoration: none;
+    position: relative;
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+  Active Navigation Link
+------------------------------------------------------------------------------------------------*/
+
+header li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%) scaleX(0);
+    width: 50px;
+    height: 3px;
+    background-color: var(--red-color);
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+}
+
+header li a.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+  Header Button
+------------------------------------------------------------------------------------------------*/
+
+header button {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: var(--red-hover-color);
+}
+
+header button:active {
+    background-color: var(--red-active-color);
+}
+
+header button a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+
+/*===============================================================================================
+  HERO SECTION
+================================================================================================*/
 
 main {
     display: flex;
@@ -82,60 +178,6 @@ p {
     margin-bottom: 0px;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0;
-    gap: 50px;
-    align-items: center;
-
-}
-
-li {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    gap: 50px;
-}
-
-button {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    background-color: var(--red-color);
-    color: #EFEFEF;
-
-    gap: 36px;
-
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    border-color: #9D0514;
-
-    border-radius: 3px;
-
-
-}
-
-button a {
-    color: #EFEFEF;
-    text-decoration: none;
-}
-
-#book-appointment {
-    width: 200px;
-    margin-top: 45px;
-}
-
 .logo {
     height: 51px;
     width: auto;
@@ -154,6 +196,49 @@ button a {
     margin-left: 50px;
     margin-bottom: 100px;
 }
+
+#book-appointment {
+    width: 200px;
+    margin-top: 45px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+  General Buttons
+------------------------------------------------------------------------------------------------*/
+
+button {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--red-hover-color);
+}
+
+button:active {
+    background-color: var(--red-active-color);
+}
+
+button a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+
+/*===============================================================================================
+  REVIEWS
+================================================================================================*/
 
 #review-container {
     display: flex;
@@ -194,12 +279,17 @@ button a {
     font-size: 14px;
 }
 
+
+/*===============================================================================================
+  CONTACT SECTION
+================================================================================================*/
+
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #EFEFEF;
+    background-color: var(--white-color);
 }
 
 #contact h1 {
@@ -214,8 +304,13 @@ button a {
     align-items: flex-start;
 }
 
+
+/*-----------------------------------------------------------------------------------------------
+  Contact Form
+------------------------------------------------------------------------------------------------*/
+
 #contact-us {
-    background-color: white;
+    background-color: var(--pure-white-color);
     display: flex;
     flex-direction: column;
     width: 570px;
@@ -248,6 +343,13 @@ button a {
     font-size: 14px;
     padding: 13px 0px 13px 18px;
     margin-bottom: 24px;
+    border: 1px solid var(--black-color);
+    border-radius: 3px;
+}
+
+#contact-us input:focus {
+    outline: 2px solid var(--red-color);
+    border-color: var(--transparent-color);
 }
 
 #contact-us textarea {
@@ -257,26 +359,41 @@ button a {
     font-size: 14px;
     padding: 13px 0px 13px 18px;
     margin-bottom: 24px;
+    border: 1px solid var(--black-color);
+    border-radius: 3px;
+    height: 130px;
     resize: none;
 }
 
-#hours {}
+#contact-us textarea:focus {
+    outline: 2px solid var(--red-color);
+    border-color: var(--transparent-color);
+}
+
+#contact-us input::placeholder,
+#contact-us textarea::placeholder {
+    opacity: 0.6;
+}
+
+
+/*===============================================================================================
+  HOURS & CONTACT INFORMATION
+================================================================================================*/
 
 #hours-card {
     border-radius: 3px;
     width: 335px;
-    background-color: white;
+    background-color: var(--pure-white-color);
     padding: 35px 50px 32px 50px;
 }
 
 #hours h2 {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     letter-spacing: 0.32em;
-    margin-bottom: 17px;
     text-align: center;
 }
 
@@ -324,9 +441,14 @@ button a {
     margin-top: 13px;
 }
 
+
+/*===============================================================================================
+  FOOTER
+================================================================================================*/
+
 footer {
     width: 100%;
-    background-color: black;
+    background-color: var(--black-color);
     padding: 66px;
 }
 
@@ -359,7 +481,7 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: white;
+    color: var(--pure-white-color);
     opacity: 0.65;
 }
 
@@ -367,43 +489,21 @@ footer {
     font-family: poppins, sans-serif;
     font-style: normal;
     font-size: 14px;
-    color: white;
+    color: var(--pure-white-color);
 }
 
 #footer-divider {
     border: none;
     height: 1px;
     width: 616px;
-    background-color: white;
+    background-color: var(--pure-white-color);
 }
 
 #footer-container h3 {
     font-family: poppins, sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: white;
+    color: var(--pure-white-color);
     opacity: 0.7;
     font-size: 13px;
 }
-
-/*
-// Poppins Bold
-font-family: poppins, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-// Poppins Regular
-font-family: poppins, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-// Poppins Light
-font-family: poppins, sans-serif;
-font-weight: 300;
-font-style: normal;
-
-// Poppins Light Italic
-font-family: poppins, sans-serif;
-font-weight: 300;
-font-style: italic;
-*/
