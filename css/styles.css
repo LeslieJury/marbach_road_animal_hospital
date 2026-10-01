@@ -90,6 +90,9 @@ header li a {
     text-decoration: none;
     position: relative;
 }
+#hamburger-menu {
+    display: none;
+}
 
 
 /*-----------------------------------------------------------------------------------------------
@@ -506,4 +509,53 @@ footer {
     color: var(--pure-white-color);
     opacity: 0.7;
     font-size: 13px;
+}
+
+@media (max-width: 1249px) {
+
+#navbar-links {
+    display: none;
+}
+
+#hamburger-menu {
+    display: block;
+}
+#review-container {
+    justify-content: center ;
+}
+#second-review-card {
+    display: none;
+}
+main {
+    position: relative;
+    margin-left: 0;
+    margin-top: 150px;
+}
+.hero-img {
+    position: absolute;
+    z-index: -1000;
+    height: 300px;
+    bottom: -10px;
+    left: -120px;
+}
+.hero-txt {
+    margin: 0;
+    margin-bottom: 100px;
+}
+.hero-txt h1 {
+    text-align: left;
+    padding-left: 10px;
+}
+.hero-txt p {
+    text-align: left;
+    padding-left: 10px;
+}
+.hero-txt button {
+    margin: auto;
+}
+#contact-card-container {
+    flex-direction: column;
+    align-items: center;
+}
+
 }
