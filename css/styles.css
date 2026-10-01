@@ -50,7 +50,9 @@ button {
     font: inherit;
     cursor: pointer;
 }
-
+.break {
+    display: none;
+}
 
 /*===============================================================================================
   HEADER & NAVIGATION
@@ -523,9 +525,6 @@ footer {
 #review-container {
     justify-content: center ;
 }
-#second-review-card {
-    display: none;
-}
 main {
     position: relative;
     margin-left: 0;
@@ -558,4 +557,31 @@ main {
     align-items: center;
 }
 
+}
+
+@media (max-width: 950px) {
+
+#second-review-card {
+    display: none;
+}
+
+}
+
+@media (max-width: 800px) {
+
+
+    .hero-txt > h1 {
+        font-size: 30px;
+        margin: auto;
+        line-height: 37px;
+        margin-bottom: 10px;
+    }
+    .break {
+        display: inline;
+    }
+    .hero-txt p {
+        font-size: 13px;
+        width: 290px;
+        margin: auto;
+    }
 }
