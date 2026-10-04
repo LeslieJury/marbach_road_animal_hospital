@@ -50,9 +50,11 @@ button {
     font: inherit;
     cursor: pointer;
 }
+
 .break {
     display: none;
 }
+
 .copyright-break {
     display: none;
 }
@@ -96,6 +98,7 @@ header li a {
     text-decoration: none;
     position: relative;
 }
+
 #hamburger-menu {
     display: none;
 }
@@ -520,75 +523,89 @@ footer {
 
 @media (max-width: 1249px) {
 
-#navbar-links {
-    display: none;
-}
+    #navbar-links {
+        display: none;
+    }
 
-#hamburger-menu {
-    display: block;
-}
-#review-container {
-    justify-content: center ;
-}
-main {
-    position: relative;
-    margin-left: 0;
-    margin-top: 150px;
-}
-.hero-img {
-    position: absolute;
-    z-index: -1000;
-    height: 300px;
-    bottom: -10px;
-    left: -120px;
-}
-.hero-txt {
-    margin: 0;
-    margin-bottom: 100px;
-}
-.hero-txt h1 {
-    text-align: left;
-    padding-left: 10px;
-}
-.hero-txt p {
-    text-align: left;
-    padding-left: 10px;
-}
-.hero-txt button {
-    margin: auto;
-}
-#contact-card-container {
-    flex-direction: column;
-    align-items: center;
-}
+    #hamburger-menu {
+        display: block;
+    }
+
+    #review-container {
+        justify-content: center;
+    }
+
+    main {
+        position: relative;
+        margin-left: 0;
+        margin-top: 150px;
+    }
+
+    .hero-img {
+        position: absolute;
+        z-index: -1000;
+        height: 300px;
+        bottom: -10px;
+        left: -120px;
+    }
+
+    .hero-txt {
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .hero-txt h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .hero-txt p {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .hero-txt button {
+        margin: auto;
+    }
+
+    #contact-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
 @media (max-width: 950px) {
 
-#second-review-card {
-    display: none;
-}
-#contact-us {
-    width: 335px;
-}
-#footer-top img{
-    height: 35px;
-}
-.hero-txt > h1 {
+    #second-review-card {
+        display: none;
+    }
+
+    #contact-us {
+        
+    }
+
+    #footer-top img {
+        height: 35px;
+    }
+
+    .hero-txt>h1 {
         font-size: 30px;
         line-height: 37px;
         margin-bottom: 10px;
     }
+
     .break {
         display: inline;
     }
+
     .hero-txt p {
         font-size: 13px;
         width: 290px;
         margin: auto;
     }
-    #contact > h1 {
+
+    #contact>h1 {
         font-size: 27px;
         text-align: center;
         line-height: 35px;
@@ -597,70 +614,74 @@ main {
 
 
 
-    
+
 @media (max-width: 600px) {
     footer {
         display: none;
     }
+
     header {
         padding-left: 30px;
         padding-right: 30px;
     }
+
     .logo {
         height: 40px;
     }
+
     main {
         margin-bottom: 200px;
     }
+
     button {
         font-size: 14px;
     }
+
     .review-card {
         width: 250px;
     }
+
     .review-card h1 {
         font-size: 14px;
     }
+
     .review-card h2 {
         font-size: 14px;
     }
+
     .hero-img {
         bottom: -210px;
     }
-    #contact > h1 {
-        font-size: 26px;
-        line-height: 35px;
+
+    #contact-card-container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
     #contact-us {
-        width: 280px;
+        width: 100%;
         padding: 30px;
     }
-    #contact-us h2 {
-        font-size: 18px;
-    }
-    #contact-us label {
-        font-size: 12px;
-    }
-    #contact-us input{
-        font-size: 12px;
-    }
-    #contact-us textarea {
-        font-size: 12px;
-    }
+
     #hours-card {
         width: 280px;
         padding: 30px;
     }
+
     #hours-card h2 {
         font-size: 18px;
     }
+
     #hours-card p {
-        font-size: 12px;
+        font-size: 14px;
     }
+
     #hours-message {
         width: 280px;
-        font-size: 12px;
+        font-size: 14px;
     }
+
     .copyright-break {
         display: block;
     }
