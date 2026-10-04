@@ -581,9 +581,6 @@ footer {
         display: none;
     }
 
-    #contact-us {
-        
-    }
 
     #footer-top img {
         height: 35px;
@@ -616,9 +613,6 @@ footer {
 
 
 @media (max-width: 600px) {
-    footer {
-        display: none;
-    }
 
     header {
         padding-left: 30px;
@@ -681,7 +675,19 @@ footer {
         width: 280px;
         font-size: 14px;
     }
-
+    footer {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+    #footer-top {
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #footer-container h3 {
+        text-align: center;
+        font-size: 10px
+    }
     .copyright-break {
         display: block;
     }
@@ -690,7 +696,5 @@ footer {
         display: none;
     }
 
-    #footer-container h3 {
-        text-align: center;
-    }
+    
 }
