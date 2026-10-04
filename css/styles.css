@@ -53,6 +53,10 @@ button {
 .break {
     display: none;
 }
+.copyright-break {
+    display: none;
+}
+
 
 /*===============================================================================================
   HEADER & NAVIGATION
@@ -197,13 +201,13 @@ p {
 .hero-txt {
     display: flex;
     flex-direction: column;
-    width: 655px;
+    max-width: 655px;
     margin-left: 50px;
     margin-bottom: 100px;
 }
 
 #book-appointment {
-    width: 200px;
+    max-width: 200px;
     margin-top: 45px;
 }
 
@@ -500,7 +504,8 @@ footer {
 #footer-divider {
     border: none;
     height: 1px;
-    width: 616px;
+    width: 100%;
+    max-width: 616px;
     background-color: var(--pure-white-color);
 }
 
@@ -564,15 +569,14 @@ main {
 #second-review-card {
     display: none;
 }
-
+#contact-us {
+    width: 335px;
 }
-
-@media (max-width: 800px) {
-
-
-    .hero-txt > h1 {
+#footer-top img{
+    height: 35px;
+}
+.hero-txt > h1 {
         font-size: 30px;
-        margin: auto;
         line-height: 37px;
         margin-bottom: 10px;
     }
@@ -583,5 +587,98 @@ main {
         font-size: 13px;
         width: 290px;
         margin: auto;
+    }
+    #contact > h1 {
+        font-size: 27px;
+        text-align: center;
+        line-height: 35px;
+    }
+}
+
+
+
+    
+@media (max-width: 600px) {
+    footer {
+        display: none;
+    }
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .logo {
+        height: 40px;
+    }
+    main {
+        margin-bottom: 200px;
+    }
+    .hero-txt > h1 {
+        font-size: 26px;
+        line-height: 35px;
+        padding-left: 20px;
+    }
+    .hero-txt p {
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    button {
+        font-size: 12px;
+    }
+    .review-card {
+        width: 250px;
+    }
+    .review-card h1 {
+        font-size: 12px;
+    }
+    .review-card h2 {
+        font-size: 12px;
+    }
+    .hero-img {
+        bottom: -210px;
+    }
+    #contact > h1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    #contact-us {
+        width: 280px;
+        padding: 30px;
+    }
+    #contact-us h2 {
+        font-size: 18px;
+    }
+    #contact-us label {
+        font-size: 12px;
+    }
+    #contact-us input{
+        font-size: 12px;
+    }
+    #contact-us textarea {
+        font-size: 12px;
+    }
+    #hours-card {
+        width: 280px;
+        padding: 30px;
+    }
+    #hours-card h2 {
+        font-size: 18px;
+    }
+    #hours-card p {
+        font-size: 12px;
+    }
+    #hours-message {
+        width: 280px;
+        font-size: 12px;
+    }
+    .copyright-break {
+        display: block;
+    }
+
+    .copyright-dash {
+        display: none;
+    }
+
+    #footer-container h3 {
+        text-align: center;
     }
 }
