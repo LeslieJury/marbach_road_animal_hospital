@@ -78,6 +78,19 @@ header {
     z-index: 1000;
 }
 
+header > * {
+    transition: opacity 0.25s ease;
+}
+
+header.is-scrolled > * {
+    opacity: 0.45;
+}
+
+header.is-scrolled:hover > *,
+header.is-scrolled:focus-within > * {
+    opacity: 1;
+}
+
 header ul {
     display: flex;
     flex-direction: row;

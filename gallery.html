@@ -4,18 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="https://use.typekit.net/hvl6trk.css">
 </head>
 <body>
     <header>
         <img class="logo" src="images/logotype.png" alt="Marbach Animal Hospital Logo">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <button><a href="contact.html">Contact Us!</a></button>
+        <ul id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <button><a href="contact.html">Contact Us</a></button>
         </ul>
+        <img id="hamburger-menu" src="images/hamburger-menu.svg" alt="menu">
     </header>
+
+    <main class="gallery-intro">
+        <h1>See What We're All About</h1>
+        <p>From our dedicated team to the pets we care for, take a closer look at life at Marbach Road Animal Hospital.</p>
+    </main>
+
+    <section class="gallery-carousel-section" aria-label="Pet photo gallery">
+        <div class="gallery-carousel" id="gallery-carousel" role="region" aria-roledescription="carousel" aria-label="Pet photos">
+            <div class="gallery-track-row" role="group" aria-label="First row of photos">
+                <div class="gallery-track">
+                    <div class="gallery-image-set">
+                        <!-- Replace each placeholder with a button like:
+                             <button class="gallery-photo" type="button"><img src="images/gallery/photo-01.jpg" alt="Dog playing outdoors"></button>
+                             Give each photo a useful alt description. -->
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 1</span>
+                        </div>
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 2</span>
+                        </div>
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 3</span>
+                        </div>
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-track-row" role="group" aria-label="Second row of photos">
+                <div class="gallery-track">
+                    <div class="gallery-image-set">
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 5</span>
+                        </div>
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 6</span>
+                        </div>
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 7</span>
+                        </div>
+                        <div class="gallery-photo is-placeholder" aria-hidden="true">
+                            <span>Add photo 8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-resources" aria-labelledby="gallery-resources-title">
+        <h2 id="gallery-resources-title">Helpful Resources</h2>
+        <div class="resources-card">
+            <h3>Educational Handouts</h3>
+            <ul class="resource-list">
+                <li>
+                    <span>Atopy-Allergy Generic Text (docx)</span>
+                    <span class="resource-download" aria-label="Download">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3" /></svg>
+                        <span>Download</span>
+                    </span>
+                </li>
+                <li>
+                    <span>Glucosamine-Chondroitin and Omega 3 Fatty Acid Supplements-UPDATED (docx)</span>
+                    <span class="resource-download" aria-label="Download">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3" /></svg>
+                        <span>Download</span>
+                    </span>
+                </li>
+                <li>
+                    <span>HW_Flea_Tick Prevention Generic Text (docx)</span>
+                    <span class="resource-download" aria-label="Download">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3" /></svg>
+                        <span>Download</span>
+                    </span>
+                </li>
+                <li>
+                    <span>Proactive Ear Cleaning_Maintenance_UPDATED (docx)</span>
+                    <span class="resource-download" aria-label="Download">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3" /></svg>
+                        <span>Download</span>
+                    </span>
+                </li>
+                <li>
+                    <span>Passive Dental Hygiene Products (docx)</span>
+                    <span class="resource-download" aria-label="Download">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3" /></svg>
+                        <span>Download</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <dialog class="gallery-preview" id="gallery-preview" aria-label="Gallery image preview">
+        <button class="gallery-preview-close" id="gallery-preview-close" type="button" aria-label="Close image preview">&times;</button>
+        <img id="gallery-preview-image" alt="">
+    </dialog>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-top">
+                <img src="images/logotype-white.png" alt="Marbach Road Animal Hospital logo">
+                <div id="footer-browse-section">
+                    <h2>BROWSE</h2>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div id="footer-divider"></div>
+            <h3>
+                Copyright © 2026 Marbach Road Animal Hospital<br class="copyright-break">
+                <span class="copyright-dash">- </span>All Rights Reserved.
+            </h3>
+        </div>
+    </footer>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/gallery.js" defer></script>
 </body>
 </html>
