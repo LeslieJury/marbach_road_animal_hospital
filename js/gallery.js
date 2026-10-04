@@ -139,9 +139,16 @@
             state.dragging = false;
             state.row.classList.remove("is-dragging");
             const wasClick = event.type === "pointerup" && state.dragDistance <= 6;
+            const wasDrag = state.dragDistance > 6;
             state.suppressClick = Boolean(state.pressedPhoto);
             if (wasClick) {
                 openPreview(state.pressedPhoto);
+            }
+            if (wasDrag) {
+                state.hasFocus = false;
+                if (state.row.contains(document.activeElement)) {
+                    document.activeElement.blur();
+                }
             }
             state.pointerId = null;
             state.pressedPhoto = null;

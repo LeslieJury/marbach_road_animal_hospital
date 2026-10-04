@@ -511,7 +511,7 @@ header .nav-contact-button {
     padding: 56px 20px 20px;
     overflow: visible;
     border: 0;
-    background: #171717;
+    background: transparent;
     color: var(--pure-white-color);
 }
 
