@@ -14,13 +14,27 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html" class="active">Gallery</a></li>
-            <button><a href="contact.html">Contact Us</a></button>
+            <li><a class="nav-contact-button" href="index.html#contact">Contact us</a></li>
         </ul>
-        <img id="hamburger-menu" src="images/hamburger-menu.svg" alt="menu">
+        <button id="hamburger-menu" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+            <img src="images/hamburger-menu.svg" alt="">
+        </button>
     </header>
 
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a class="mobile-menu-link" href="index.html"><img class="mobile-menu-icon" src="images/home.svg" alt="" aria-hidden="true">Home</a></li>
+                <li><a class="mobile-menu-link" href="about.html"><img class="mobile-menu-icon" src="images/about.svg" alt="" aria-hidden="true">About</a></li>
+                <li><a class="mobile-menu-link active" href="gallery.html"><img class="mobile-menu-icon" src="images/gallery.svg" alt="" aria-hidden="true">Gallery</a></li>
+            </ul>
+            <a class="mobile-menu-contact" href="index.html#contact">Contact Us</a>
+        </div>
+    </nav>
+
     <main class="gallery-intro">
-        <h1>See What We're All About</h1>
+        <h1>See What We're<br class="gallery-title-break"> All About</h1>
         <p>From our dedicated team to the pets we care for, take a closer look at life at Marbach Road Animal Hospital.</p>
     </main>
 

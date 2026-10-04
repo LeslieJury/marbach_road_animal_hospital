@@ -18,11 +18,25 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <button><a href="contact.html">Contact us</a></button>
+            <li><a class="nav-contact-button" href="#contact">Contact us</a></li>
         </ul>
 
-        <img id="hamburger-menu" src="images/hamburger-menu.svg" alt="menu">
+        <button id="hamburger-menu" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+            <img src="images/hamburger-menu.svg" alt="">
+        </button>
     </header>
+
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a class="mobile-menu-link active" href="index.html"><img class="mobile-menu-icon" src="images/home.svg" alt="" aria-hidden="true">Home</a></li>
+                <li><a class="mobile-menu-link" href="about.html"><img class="mobile-menu-icon" src="images/about.svg" alt="" aria-hidden="true">About</a></li>
+                <li><a class="mobile-menu-link" href="gallery.html"><img class="mobile-menu-icon" src="images/gallery.svg" alt="" aria-hidden="true">Gallery</a></li>
+            </ul>
+            <a class="mobile-menu-contact" href="#contact">Contact Us</a>
+        </div>
+    </nav>
 
     <main>
         <img class="hero-img" src="images/landing-page-puppy.png" alt="Cute Puppy">
@@ -37,7 +51,7 @@
             </p>
 
             <button id="book-appointment">
-                <a>Book appointment</a>
+                <a href="#contact">Book appointment</a>
             </button>
 
             <div id="review-container">
@@ -147,7 +161,7 @@
                     <a href="">Home</a>
                     <a href="">About</a>
                     <a href="">Gallery</a>
-                    <a href="">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
 
             </div>
