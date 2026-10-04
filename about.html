@@ -7,16 +7,38 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/hvl6trk.css">
 </head>
-<body>
+<body id="top">
     <header>
         <img class="logo" src="images/logotype.png" alt="Marbach Animal Hospital Logo">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a class="nav-contact-button" href="contact.html">Contact Us!</a></li>
+        <ul id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="nav-contact-button" href="index.html#contact">Contact us</a></li>
         </ul>
+        <button id="hamburger-menu" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+            <img src="images/hamburger-menu.svg" alt="">
+        </button>
     </header>
+
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a class="mobile-menu-link" href="index.html"><img class="mobile-menu-icon" src="images/home.svg" alt="" aria-hidden="true">Home</a></li>
+                <li><a class="mobile-menu-link active" href="about.html"><img class="mobile-menu-icon" src="images/about.svg" alt="" aria-hidden="true">About</a></li>
+                <li><a class="mobile-menu-link" href="gallery.html"><img class="mobile-menu-icon" src="images/gallery.svg" alt="" aria-hidden="true">Gallery</a></li>
+            </ul>
+            <a class="mobile-menu-contact" href="index.html#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="about-intro">
+        <h1>Coming soon!</h1>
+        <p>This section is currently being developed.</p>
+    </main>
+
     <script src="js/navbar.js" defer></script>
 </body>
 </html>
+

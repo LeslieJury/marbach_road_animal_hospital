@@ -904,3 +904,58 @@ footer {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ABOUT PAGE INTRO */
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 680px;
+    margin: 190px auto 47px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-intro h1 {
+    margin: 0 0 7px;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.about-intro p {
+    margin: 0 auto;
+    max-width: 540px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    .about-intro {
+        width: min(680px, calc(100% - 40px));
+        max-width: none;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .about-intro h1 {
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    .about-intro p {
+        max-width: 540px;
+        margin: 0 auto;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+

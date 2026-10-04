@@ -105,4 +105,11 @@
 
     updateNavbar();
     window.addEventListener("scroll", updateNavbar, { passive: true });
+
+    document.querySelectorAll('a[href="#top"]').forEach((topLink) => {
+        topLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
 })();
