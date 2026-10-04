@@ -612,26 +612,17 @@ main {
     main {
         margin-bottom: 200px;
     }
-    .hero-txt > h1 {
-        font-size: 26px;
-        line-height: 35px;
-        padding-left: 20px;
-    }
-    .hero-txt p {
-        font-size: 12px;
-        padding-left: 20px;
-    }
     button {
-        font-size: 12px;
+        font-size: 14px;
     }
     .review-card {
         width: 250px;
     }
     .review-card h1 {
-        font-size: 12px;
+        font-size: 14px;
     }
     .review-card h2 {
-        font-size: 12px;
+        font-size: 14px;
     }
     .hero-img {
         bottom: -210px;
