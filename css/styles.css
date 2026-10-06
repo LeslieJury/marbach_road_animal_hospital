@@ -917,7 +917,7 @@ footer {
 }
 
 .about-intro h1 {
-    margin: 0 0 7px;
+    margin: 0 0 4px;
     font-family: poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -932,6 +932,10 @@ footer {
     font-style: normal;
     font-size: 16px;
     text-align: center;
+}
+#back-link {
+    color: #9D0514;
+    margin-top: 50px;
 }
 
 @media (max-width: 950px) {
