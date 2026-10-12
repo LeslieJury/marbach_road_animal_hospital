@@ -1,0 +1,379 @@
+/* ABOUT PAGE */
+.about-page {
+    color: #1a1a1a;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 234px 0 154px;
+}
+
+.about-section {
+    width: 514px;
+    margin: auto;
+    font-family: poppins, sans-serif;
+}
+
+.about-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+.about-section-heading h1,
+.about-section-heading h2 {
+    margin: 0;
+    color: #1a1a1a;
+    font-family: poppins, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.19;
+}
+
+.about-section-heading h1 {
+    font-size: 36px;
+}
+
+.about-section-rule {
+    flex: 0 0 88px;
+    height: 8px;
+    margin-top: 13px;
+    background-color: #98020c;
+}
+
+.about-section-heading-dark .about-section-rule {
+    background-color: #1a1a1a;
+}
+
+.about-quote {
+    max-width: 412px;
+    margin: 42px 0 0;
+    color: #1a1a1a;
+    font-family: poppins, sans-serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-quote strong {
+    font-weight: 700;
+}
+
+.about-copy,
+.about-services {
+    color: #1a1a1a;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.about-copy p {
+    font-size: inherit;
+}
+
+.about-copy strong {
+    font-weight: 700;
+}
+
+.about-intro-copy {
+    max-width: 474px;
+    margin-top: 42px;
+}
+
+.about-copy p + p {
+    margin-top: 16px;
+}
+
+.about-chapter {
+    margin-top: 180px;
+}
+
+.about-figure {
+    width: 276px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.about-figure img {
+    width: 276px;
+    height: 184px;
+    object-fit: cover;
+}
+
+.about-figure figcaption {
+    margin-top: 5px;
+    color: #1a1a1a;
+    font-family: poppins, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.about-chapter-figure {
+    margin-top: 58px;
+}
+
+.about-owner-copy {
+    max-width: 465px;
+    margin-top: 46px;
+}
+
+.about-experience-quote {
+    max-width: 407px;
+}
+
+.about-bio-copy {
+    max-width: 465px;
+    margin-top: 48px;
+}
+
+.about-care {
+    margin-top: 180px;
+}
+
+.about-care .about-section-heading h2 {
+    max-width: 390px;
+}
+
+.about-care-intro {
+    max-width: 465px;
+    margin-top: 42px;
+}
+
+.about-services {
+    max-width: 340px;
+    margin: 22px 0 0;
+    padding-left: 24px;
+    line-height: 1.92;
+}
+
+.about-care-outro {
+    max-width: 466px;
+    margin-top: 26px;
+}
+
+.about-commitment {
+    margin-top: 180px;
+}
+
+.about-commitment-figure {
+    margin-top: 58px;
+}
+
+.about-commitment-copy {
+    max-width: 514px;
+    margin-top: 40px;
+}
+
+@media (max-width: 650px) {
+    .about-main {
+        padding-top: 161px;
+        padding-bottom: 100px;
+    }
+
+    .about-section {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-section-heading {
+        position: relative;
+        display: block;
+    }
+
+    .about-section-heading h1,
+    .about-section-heading h2 {
+        max-width: 304px;
+        font-size: 30px;
+        line-height: 1.254;
+    }
+
+    .about-section-rule {
+        position: absolute;
+        top: 15px;
+        left: -49px;
+        width: 33px;
+        height: 8px;
+        margin: 0;
+    }
+
+    .about-quote {
+        width: 100%;
+        max-width: 310px;
+        margin-top: 43px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .about-copy,
+    .about-services {
+        font-size: 14px;
+    }
+
+    .about-intro-copy {
+        max-width: 304px;
+        margin-top: 35px;
+    }
+
+    .about-copy p + p {
+        margin-top: 14px;
+    }
+
+    .about-chapter {
+        margin-top: 135px;
+    }
+
+    .about-figure {
+        width: min(276px, 100%);
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about-figure img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .about-figure figcaption {
+        font-size: 12px;
+    }
+
+    .about-chapter-figure {
+        margin-top: 47px;
+    }
+
+    .about-chapter .about-section-heading,
+    .about-commitment .about-section-heading {
+        width: 304px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-chapter .about-figure,
+    .about-commitment .about-figure {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-owner-copy {
+        max-width: 304px;
+        margin-top: 55px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-experience-quote {
+        max-width: 310px;
+        margin-top: 35px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-bio-copy {
+        max-width: 304px;
+        margin-top: 39px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-care {
+        margin-top: 99px;
+    }
+
+    .about-care .about-section-heading h2 {
+        max-width: 304px;
+    }
+
+    .about-care-intro {
+        max-width: 304px;
+        margin-top: 38px;
+    }
+
+    .about-services {
+        max-width: 304px;
+        margin-top: 22px;
+        padding-left: 21px;
+        line-height: 1.92;
+    }
+
+    .about-care-outro {
+        max-width: 304px;
+        margin-top: 28px;
+    }
+
+    .about-commitment {
+        margin-top: 142px;
+    }
+
+    .about-commitment-figure {
+        margin-top: 47px;
+    }
+
+    .about-commitment-copy {
+        max-width: 304px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-page header {
+        padding-left: max(30px, calc((100vw - 304px) / 2));
+        padding-right: max(30px, calc((100vw - 304px) / 2));
+    }
+
+    .about-page .logo {
+        height: 41px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-section {
+        width: calc(100% - 78px);
+    }
+
+    .about-section-rule {
+        left: -39px;
+    }
+
+    .about-page header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* Scroll focus: keep the section nearest the viewport center prominent. */
+.about-scroll-effects .about-section {
+    opacity: 0.42;
+    transform: scale(0.96);
+    transform-origin: center center;
+    transition: opacity 450ms ease, transform 450ms ease;
+}
+
+.about-scroll-effects .about-section.is-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-scroll-effects .about-section,
+    .about-scroll-effects .about-section.is-active {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

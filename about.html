@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About | Marbach Road Animal Hospital</title>
     <link rel="icon" type="image/svg+xml" href="images/paw-print.svg">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://use.typekit.net/hvl6trk.css">
 </head>
-<body id="top">
+
+<body id="top" class="about-page">
     <header>
         <img class="logo" src="images/logotype.png" alt="Marbach Animal Hospital Logo">
+
         <ul id="navbar-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="about.html" class="active" aria-current="page">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a class="nav-contact-button" href="index.html#contact">Contact us</a></li>
         </ul>
+
         <button id="hamburger-menu" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
             <img src="images/hamburger-menu.svg" alt="">
         </button>
@@ -27,20 +32,110 @@
         <div class="mobile-menu-content">
             <ul>
                 <li><a class="mobile-menu-link" href="index.html"><img class="mobile-menu-icon" src="images/home.svg" alt="" aria-hidden="true">Home</a></li>
-                <li><a class="mobile-menu-link active" href="about.html"><img class="mobile-menu-icon" src="images/about.svg" alt="" aria-hidden="true">About</a></li>
+                <li><a class="mobile-menu-link active" href="about.html" aria-current="page"><img class="mobile-menu-icon" src="images/about.svg" alt="" aria-hidden="true">About</a></li>
                 <li><a class="mobile-menu-link" href="gallery.html"><img class="mobile-menu-icon" src="images/gallery.svg" alt="" aria-hidden="true">Gallery</a></li>
             </ul>
             <a class="mobile-menu-contact" href="index.html#contact">Contact Us</a>
         </div>
     </nav>
 
-    <main class="about-intro">
-        <h1>Coming soon!</h1>
-        <p>This section is currently being developed.</p>
-        <p id="back-link"><a href="index.html">&lt; Back Home</a></p>
+    <main class="about-main">
+        <section class="about-section about-intro" aria-labelledby="about-title">
+            <div class="about-section-heading about-section-heading-red">
+                <span class="about-section-rule" aria-hidden="true"></span>
+                <h1 id="about-title">About Us</h1>
+            </div>
+            <blockquote class="about-quote">
+                “Caring for <strong>generations</strong> of dogs, cats, and the families who love them.”
+            </blockquote>
+            <div class="about-copy about-intro-copy">
+                <p><strong>Since 1973</strong>, Marbach Road Animal Hospital has been a part of the West San Antonio community, caring for generations of dogs, cats, and the families who love them.</p>
+                <p>That history is something we are proud to carry forward.</p>
+            </div>
+        </section>
+
+        <section class="about-section about-chapter" aria-labelledby="chapter-title">
+            <div class="about-section-heading about-section-heading-dark">
+                <span class="about-section-rule" aria-hidden="true"></span>
+                <h2 id="chapter-title">A New Chapter</h2>
+            </div>
+            <figure class="about-figure about-chapter-figure">
+                <img src="images/gallery/1.webp" alt="Dr. Tracy Green holding a cat and dog">
+                <figcaption>Dr. Green examines a patient during a visit.</figcaption>
+            </figure>
+            <p class="about-copy about-owner-copy"><strong>In 2026</strong>, Dr. Tracy Green became the new owner of Marbach Road Animal Hospital, beginning an exciting new chapter for this long-standing San Antonio practice.</p>
+            <blockquote class="about-quote about-experience-quote">
+                “More than <strong>two decades</strong> of experience in small-animal medicine”
+            </blockquote>
+            <div class="about-copy about-bio-copy">
+                <p><strong>Dr. Green</strong> is a San Antonio native and a graduate of the Texas A&amp;M College of Veterinary Medicine, earning her Doctor of Veterinary Medicine degree in 2002.</p>
+                <p>With more than two decades of experience in small-animal medicine, she brings a passion for high-quality veterinary care and lifelong relationships with pets and their families.</p>
+            </div>
+        </section>
+
+        <section class="about-section about-care" aria-labelledby="care-title">
+            <div class="about-section-heading about-section-heading-red">
+                <span class="about-section-rule" aria-hidden="true"></span>
+                <h2 id="care-title">Comprehensive Veterinary Care</h2>
+            </div>
+            <p class="about-copy about-care-intro"><strong>Our team</strong> provides care throughout every stage of a pet’s life, including:</p>
+            <ul class="about-services">
+                <li>Wellness and preventive care</li>
+                <li>Puppy and kitten care</li>
+                <li>Senior pet care</li>
+                <li>Vaccinations</li>
+                <li>Dental care and cleanings</li>
+                <li>Spays and neuters</li>
+                <li>Soft-tissue surgery</li>
+                <li>Mass and tumor removal</li>
+                <li>Diagnostic testing</li>
+                <li>Digital radiography</li>
+                <li>Laboratory services</li>
+                <li>Treatment of illness and injury</li>
+                <li>And more</li>
+            </ul>
+            <p class="about-copy about-care-outro">Whether your pet needs routine care or ongoing treatment, our team provides knowledgeable and compassionate care.</p>
+        </section>
+
+        <section class="about-section about-commitment" aria-labelledby="commitment-title">
+            <div class="about-section-heading about-section-heading-dark">
+                <span class="about-section-rule" aria-hidden="true"></span>
+                <h2 id="commitment-title">Our Commitment</h2>
+            </div>
+            <figure class="about-figure about-commitment-figure">
+                <img src="images/gallery/38.webp" alt="A veterinarian gently examining a dog">
+                <figcaption>A patient receiving gentle care.</figcaption>
+            </figure>
+            <div class="about-copy about-commitment-copy">
+                <p><strong>We understand</strong> that pets aren’t just animals, they are family.</p>
+                <p>We strive to create an environment where you feel comfortable asking questions, understanding your pet’s treatment options, and making informed decisions about their care.</p>
+                <p>We want every client to know that when you bring your pet to Marbach Road, you are part of our family too.</p>
+            </div>
+        </section>
     </main>
 
-    <script src="js/navbar.js" defer></script>
-</body>
-</html>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-top">
+                <img src="images/logotype-white.png" alt="Marbach Road Animal Hospital">
+                <div id="footer-browse-section">
+                    <h2>BROWSE</h2>
+                    <a href="index.html#top">Home</a>
+                    <a href="about.html" aria-current="page">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </div>
+            </div>
+            <div id="footer-divider"></div>
+            <h3>
+                Copyright © 2026 Marbach Road Animal Hospital<br class="copyright-break">
+                <span class="copyright-dash">- </span>All Rights Reserved.
+            </h3>
+        </div>
+    </footer>
 
+    <script src="js/navbar.js" defer></script>
+    <script src="js/about-scroll.js" defer></script>
+</body>
+
+</html>
