@@ -504,8 +504,7 @@ header .nav-contact-button {
     cursor: default;
 }
 
-.gallery-photo:focus-visible,
-.gallery-preview-close:focus-visible {
+.gallery-photo:focus-visible {
     outline: 3px solid var(--red-color);
     outline-offset: 3px;
 }
@@ -556,7 +555,7 @@ header .nav-contact-button {
     width: 40px;
     height: 40px;
     padding: 0;
-    border-radius: 50%;
+    border-radius: 0;
     color: var(--pure-white-color);
     font-size: 28px;
     line-height: 1;
@@ -811,4 +810,20 @@ footer {
     .copyright-dash {
         display: none;
     }
+}
+
+/* Keep the modal close control plain in every interaction state. */
+.gallery-preview-close,
+.gallery-preview-close:hover,
+.gallery-preview-close:active,
+.gallery-preview-close:focus {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+}
+.gallery-preview-close:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
