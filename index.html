@@ -76,80 +76,25 @@
         </div>
     </main>
 
-    <section id="contact">
-
-        <h1>Visit us or reach out,<br class="break"> We're here for you.</h1>
-
-        <div id="contact-card-container">
-
-
-        <form id="contact-us" action="https://formspree.io/f/xvkzpyjn" method="POST">
-
-            <h2>CONTACT US</h2>
-
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email address">
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
-
-            <button type="submit">Send</button>
-
-        </form>
-
-
-
-            <div id="hours">
-
-                <div id="hours-card">
-
-                    <h2>HOURS</h2>
-
-                    <div id="time-container">
-
-                        <div id="days-of-the-week">
-                            <p>Mon</p>
-                            <p>Tue</p>
-                            <p>Wed</p>
-                            <p>Thu</p>
-                            <p>Fri</p>
-                            <p>Sat</p>
-                            <p>Sun</p>
-                        </div>
-
-                        <div id="times">
-                            <p>08:00 am - 05:30 pm</p>
-                            <p>08:00 am - 05:30 pm</p>
-                            <p>08:00 am - 05:30 pm</p>
-                            <p>08:00 am - 05:30 pm</p>
-                            <p>08:00 am - 05:30 pm</p>
-                            <p>By Appointment</p>
-                            <p>Closed</p>
-                        </div>
-
-                    </div>
-
-                    <p class="contact-info">
-                        <b>Address: </b>7508 Marbach Rd, San Antonio, TX 78227
-                    </p>
-
-                    <p class="contact-info">
-                        <b>Phone: </b>(210) 673-8020
-                    </p>
-
-                </div>
-
-                <p id="hours-message">
-                    We love our customers, so feel free to visit during normal business hours.
-                </p>
-
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Visit us or reach out,<br class="break"> We’re here for you.</h2>
+        <div class="contact-details">
+            <div class="contact-detail">
+                <div class="contact-icon"><img src="images/contact-email.svg" width="79" height="59" alt="" aria-hidden="true"></div>
+                <a class="contact-detail-title" href="mailto:Marbachroad@gmail.com">Marbachroad@gmail.com</a>
+                <p>For inquiries and booking appointments</p>
             </div>
-
+            <div class="contact-detail">
+                <div class="contact-icon"><img src="images/contact-location.svg" width="68" height="84" alt="" aria-hidden="true"></div>
+                <a class="contact-detail-title" href="https://www.google.com/maps/search/?api=1&amp;query=7508+Marbach+Rd+San+Antonio+TX+78227" target="_blank" rel="noopener noreferrer">7508 Marbach Rd, San Antonio, TX 78227</a>
+                <p>Feel free to visit during business hours</p>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-icon"><img src="images/contact-hours.svg" width="84" height="84" alt="" aria-hidden="true"></div>
+                <h3 class="contact-detail-title">08:00 AM - 05:30 PM</h3>
+                <p>We are open Monday through Friday</p>
+            </div>
         </div>
-
     </section>
 
     <footer>

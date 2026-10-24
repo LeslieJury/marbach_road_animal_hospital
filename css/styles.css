@@ -346,167 +346,63 @@ button a {
 ================================================================================================*/
 
 #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+    min-height: 723px;
+    padding: 108px 24px 180px;
     background-color: var(--white-color);
+    color: #1a1a1a;
+    scroll-margin-top: 100px;
 }
 
-#contact h1 {
-    margin-top: 110px;
-    margin-bottom: 32px;
-}
-
-#contact-card-container {
-    margin-bottom: 175px;
-    display: flex;
-    gap: 22px;
-    align-items: flex-start;
-}
-
-
-/*-----------------------------------------------------------------------------------------------
-  Contact Form
-------------------------------------------------------------------------------------------------*/
-
-#contact-us {
-    background-color: var(--pure-white-color);
-    display: flex;
-    flex-direction: column;
-    width: 570px;
-    padding: 35px 50px 60px 50px;
-    border-radius: 3px;
-}
-
-#contact-us h2 {
+#contact-heading {
+    margin: 0;
     font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    letter-spacing: 0.32em;
-    margin: auto;
-    margin-bottom: 24px;
-}
-
-#contact-us label {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    margin-bottom: 6px;
-}
-
-#contact-us input {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    padding: 13px 0px 13px 18px;
-    margin-bottom: 24px;
-    border: 1px solid var(--black-color);
-    border-radius: 3px;
-}
-
-#contact-us input:focus {
-    outline: 2px solid var(--red-color);
-    border-color: var(--transparent-color);
-}
-
-#contact-us textarea {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    padding: 13px 0px 13px 18px;
-    margin-bottom: 24px;
-    border: 1px solid var(--black-color);
-    border-radius: 3px;
-    height: 130px;
-    resize: none;
-}
-
-#contact-us textarea:focus {
-    outline: 2px solid var(--red-color);
-    border-color: var(--transparent-color);
-}
-
-#contact-us input::placeholder,
-#contact-us textarea::placeholder {
-    opacity: 0.6;
-}
-
-
-/*===============================================================================================
-  HOURS & CONTACT INFORMATION
-================================================================================================*/
-
-#hours-card {
-    border-radius: 3px;
-    width: 335px;
-    background-color: var(--pure-white-color);
-    padding: 35px 50px 32px 50px;
-}
-
-#hours h2 {
-    margin-bottom: 17px;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    letter-spacing: 0.32em;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
     text-align: center;
 }
 
-#days-of-the-week p {
-    font-family: poppins, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 28px;
+.contact-details {
+    display: grid;
+    grid-template-columns: 312fr 408fr 354fr;
+    gap: 10px;
+    max-width: 1094px;
+    margin: 152px auto 0;
 }
 
-#times p {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 28.1px;
-}
-
-#time-container {
+.contact-detail { min-width: 0; text-align: center; container-type: inline-size; }
+.contact-icon {
+    height: 84px;
     display: flex;
-    gap: 30px;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
 }
-
-.contact-info {
-    margin-bottom: 8px;
+.contact-icon img { flex: none; max-width: none; }
+.contact-detail-title {
+    display: block;
+    margin: 0;
     font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    white-space: nowrap;
+}
+.contact-detail p {
+    color: rgb(0 0 0 / 60%);
     font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+a.contact-detail-title:hover { text-decoration: underline; }
+a.contact-detail-title:focus-visible {
+    outline: 2px solid var(--red-color);
+    outline-offset: 5px;
+    border-radius: 3px;
 }
 
-.contact-info b {
-    font-family: poppins, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 14px;
-}
-
-#hours-message {
-    width: 300px;
-    text-align: center;
-    margin: auto;
-    margin-top: 13px;
-}
-
-
-/*===============================================================================================
-  FOOTER
-================================================================================================*/
-
+/* FOOTER */
 footer {
     width: 100%;
     background-color: var(--black-color);
@@ -767,11 +663,6 @@ footer {
         margin: auto;
     }
 
-    #contact-card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
 }
 
 @media (max-width: 950px) {
@@ -801,11 +692,6 @@ footer {
         margin: auto;
     }
 
-    #contact>h1 {
-        font-size: 27px;
-        text-align: center;
-        line-height: 35px;
-    }
 }
 
 
@@ -846,31 +732,16 @@ footer {
         bottom: -210px;
     }
 
-    #contact-card-container {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #contact-us {
+#contact-us {
         width: 100%;
         padding: 30px;
     }
 
-    #hours-card {
-        width: 280px;
-        padding: 30px;
-    }
-
-    #hours-card h2 {
+#hours-card h2 {
         font-size: 18px;
     }
 
-    #hours-card p {
-        font-size: 14px;
-    }
-
-    #hours-message {
+#hours-message {
         width: 280px;
         font-size: 14px;
     }
@@ -905,3 +776,22 @@ footer {
     }
 }
 
+
+/* Stack contact details when the desktop columns become cramped. */
+@media (max-width: 1150px) {
+    #contact { min-height: 0; padding: 80px 24px 100px; }
+    #contact-heading { max-width: 580px; margin: 0 auto; font-size: 27px; line-height: 1.35; }
+    .contact-details { grid-template-columns: minmax(0, 1fr); gap: 56px; max-width: 408px; margin-top: 64px; }
+    .contact-icon { margin-bottom: 18px; }
+    .contact-detail-title { line-height: 1.6; }
+    .contact-detail p { margin-top: 4px; }
+}
+@media (max-width: 380px) {
+    #contact { padding-right: 20px; padding-left: 20px; }
+    #contact-heading { font-size: 25px; }
+}
+
+/* Keep every contact value and caption on one line without clipping.
+   Container units reduce type only when the card is narrower than the text. */
+.contact-detail-title { font-size: min(16px, 4cqi); white-space: nowrap; }
+.contact-detail p { font-size: min(14px, 4.2cqi); white-space: nowrap; }
