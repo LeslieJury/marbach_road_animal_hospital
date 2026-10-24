@@ -1,0 +1,375 @@
+{
+  "gallery": [
+    {
+      "image": "1",
+      "original": 80878,
+      "thumbnail1x": 17564,
+      "thumbnail2x": 54976,
+      "thumbnail3x": 108802,
+      "original_sha256": "67facee560925ad2ba7248eced6d9114dff1d2742603404d0955f9f052aea799"
+    },
+    {
+      "image": "2",
+      "original": 770318,
+      "thumbnail1x": 38862,
+      "thumbnail2x": 151104,
+      "thumbnail3x": 324240,
+      "original_sha256": "c93089a700e59ef25b0dee2a324ae66ddf1bebf2d2f88fb660a584cd36ddfdc7"
+    },
+    {
+      "image": "4",
+      "original": 54448,
+      "thumbnail1x": 19134,
+      "thumbnail2x": 48188,
+      "thumbnail3x": 72542,
+      "original_sha256": "c7d9bbc924d19ce45cf19e678e07977c282287deb3cdf561a0cc755d69544ca6"
+    },
+    {
+      "image": "5",
+      "original": 137508,
+      "thumbnail1x": 18876,
+      "thumbnail2x": 48182,
+      "thumbnail3x": 81526,
+      "original_sha256": "34db6747dc3af1b05e573bf61bb79d15f25d329c37324019ebfb9dc9c18645c7"
+    },
+    {
+      "image": "6",
+      "original": 72592,
+      "thumbnail1x": 20104,
+      "thumbnail2x": 47926,
+      "thumbnail3x": 77234,
+      "original_sha256": "64b29f21de9351db39e98d2b956d3c9211786e8a8b8e4c75fd7df2e02f9b536d"
+    },
+    {
+      "image": "7",
+      "original": 57904,
+      "thumbnail1x": 20606,
+      "thumbnail2x": 50544,
+      "thumbnail3x": 83182,
+      "original_sha256": "0bfecd2f1791c0ac3d7d770db9f7711a6defd8422d2a1452162976a4f7399f39"
+    },
+    {
+      "image": "8",
+      "original": 72794,
+      "thumbnail1x": 18814,
+      "thumbnail2x": 48568,
+      "thumbnail3x": 81160,
+      "original_sha256": "74f3056c6254645de1eff889b5d4fcbb8a7bb3fb865223ea79ff1e15dbb4c6d8"
+    },
+    {
+      "image": "9",
+      "original": 104420,
+      "thumbnail1x": 14538,
+      "thumbnail2x": 38222,
+      "thumbnail3x": 66412,
+      "original_sha256": "7a0d403e2f5afa601c07e5f26c8b127be0fcb3ef5b95599423b63c853e2b8fa7"
+    },
+    {
+      "image": "10",
+      "original": 230490,
+      "thumbnail1x": 23380,
+      "thumbnail2x": 62884,
+      "thumbnail3x": 110622,
+      "original_sha256": "711982082f0f00771c8422a6d606510b3f8a95178222541a20575520be3242da"
+    },
+    {
+      "image": "11",
+      "original": 57904,
+      "thumbnail1x": 14116,
+      "thumbnail2x": 32280,
+      "thumbnail3x": 48328,
+      "original_sha256": "d63a52c54ad9bfac172d0b6b91115dc1c917d35e71aaea0198eb54c5b6667bbd"
+    },
+    {
+      "image": "12",
+      "original": 55838,
+      "thumbnail1x": 11950,
+      "thumbnail2x": 29888,
+      "thumbnail3x": 46604,
+      "original_sha256": "a241c27c2385dbe31de914b4e73406096561c3f1e873cadc684f0125ef420547"
+    },
+    {
+      "image": "13",
+      "original": 155520,
+      "thumbnail1x": 17092,
+      "thumbnail2x": 45392,
+      "thumbnail3x": 83478,
+      "original_sha256": "7ec370023e19ade3eaeac30f127ec98b17454adbcc7cbd03c0e014e7c9d8753a"
+    },
+    {
+      "image": "14",
+      "original": 99660,
+      "thumbnail1x": 22182,
+      "thumbnail2x": 62414,
+      "thumbnail3x": 100604,
+      "original_sha256": "08ab425410917c84cdde397833d75313b5da0e8aec8140d14ff10b714189901b"
+    },
+    {
+      "image": "15",
+      "original": 183476,
+      "thumbnail1x": 25554,
+      "thumbnail2x": 77208,
+      "thumbnail3x": 137002,
+      "original_sha256": "c3bce803297010ad785dbb3c2c18692986c5543f5fdf2367a927b7c3bd92b855"
+    },
+    {
+      "image": "16",
+      "original": 134122,
+      "thumbnail1x": 18782,
+      "thumbnail2x": 59854,
+      "thumbnail3x": 101546,
+      "original_sha256": "33b9ef4d507e80a305e49599216d67611598bb00c3c5fbfbfec49a62edc94279"
+    },
+    {
+      "image": "17",
+      "original": 41938,
+      "thumbnail1x": 10496,
+      "thumbnail2x": 27422,
+      "thumbnail3x": 42938,
+      "original_sha256": "99063a7cf02d65de8ba92d59fba73c4a3c51f100c7982f04a4b98b3808caccc1"
+    },
+    {
+      "image": "18",
+      "original": 199888,
+      "thumbnail1x": 27170,
+      "thumbnail2x": 93312,
+      "thumbnail3x": 188474,
+      "original_sha256": "4c2634998e54ad2a6a34e4fd3a9c5a1ec82b88a1a9a658dd9b7bd0f9382f368d"
+    },
+    {
+      "image": "19",
+      "original": 146576,
+      "thumbnail1x": 25252,
+      "thumbnail2x": 92156,
+      "thumbnail3x": 157692,
+      "original_sha256": "5b6361f04c4f1a3f67bc3dae26f9994630adea3af78b60a2480736ef22db3af0"
+    },
+    {
+      "image": "20",
+      "original": 109874,
+      "thumbnail1x": 27554,
+      "thumbnail2x": 79728,
+      "thumbnail3x": 131252,
+      "original_sha256": "7e7b88b56f34946bb648180c906f1d7c3268c1624bc4677b4291665efe845459"
+    },
+    {
+      "image": "21",
+      "original": 145478,
+      "thumbnail1x": 23736,
+      "thumbnail2x": 79764,
+      "thumbnail3x": 139538,
+      "original_sha256": "d3362dd8126a87b92d45ba091c1cc1c5ea73e11e222eb070d9cf9a804a1b5d39"
+    },
+    {
+      "image": "22",
+      "original": 169108,
+      "thumbnail1x": 26426,
+      "thumbnail2x": 73056,
+      "thumbnail3x": 127470,
+      "original_sha256": "e9c5d237527014939a0e39c15d18f2e41b61700f0a022e71e17c00fca6608879"
+    },
+    {
+      "image": "23",
+      "original": 222616,
+      "thumbnail1x": 17506,
+      "thumbnail2x": 50522,
+      "thumbnail3x": 88712,
+      "original_sha256": "6bdc8b6d7e9b13e7b85cd942ef4cd4308c619ac76a8fb3e0a0eac68db875ff91"
+    },
+    {
+      "image": "24",
+      "original": 80656,
+      "thumbnail1x": 19856,
+      "thumbnail2x": 54326,
+      "thumbnail3x": 81362,
+      "original_sha256": "3b83477cd928c09d253fdaf72b82c46f04524406d7ee8e6c3f77d90f25b0f984"
+    },
+    {
+      "image": "25",
+      "original": 78876,
+      "thumbnail1x": 19378,
+      "thumbnail2x": 55734,
+      "thumbnail3x": 89556,
+      "original_sha256": "e9a48834c05553d839183f1ea70b00b7ebf12126d5d12860c2536a7e5c619226"
+    },
+    {
+      "image": "26",
+      "original": 199404,
+      "thumbnail1x": 28264,
+      "thumbnail2x": 116622,
+      "thumbnail3x": 212934,
+      "original_sha256": "45f24e2aa7eb57665da282c36524687c473fa761b1296830b221b5760711cb81"
+    },
+    {
+      "image": "27",
+      "original": 104056,
+      "thumbnail1x": 23708,
+      "thumbnail2x": 68644,
+      "thumbnail3x": 108122,
+      "original_sha256": "119361d53ac484a964c3d06a51734bcea3b623a65d1c9b0bf417a6c97c8e3e1f"
+    },
+    {
+      "image": "28",
+      "original": 121464,
+      "thumbnail1x": 22868,
+      "thumbnail2x": 73510,
+      "thumbnail3x": 125928,
+      "original_sha256": "8332bdea567db1f357a7f6e675123d1ac476f47a4150c0c135026dcccf7fb4f6"
+    },
+    {
+      "image": "29",
+      "original": 117264,
+      "thumbnail1x": 21684,
+      "thumbnail2x": 66840,
+      "thumbnail3x": 109182,
+      "original_sha256": "e7a01342d1a1a0f6d3ee263bed866e94b257ebd827c7e7da2843b57817074dde"
+    },
+    {
+      "image": "30",
+      "original": 158206,
+      "thumbnail1x": 28316,
+      "thumbnail2x": 102232,
+      "thumbnail3x": 184570,
+      "original_sha256": "62166c14296c9d597ebb9e5a9364c8a211668e3952e6cc0dbda68e2dd931c98e"
+    },
+    {
+      "image": "31",
+      "original": 174970,
+      "thumbnail1x": 27150,
+      "thumbnail2x": 100534,
+      "thumbnail3x": 180088,
+      "original_sha256": "7d0d0592491f3242d1e5684069dd6706aa12a79512f3d425d2d0ddf3dca03d82"
+    },
+    {
+      "image": "32",
+      "original": 146366,
+      "thumbnail1x": 21360,
+      "thumbnail2x": 66608,
+      "thumbnail3x": 112278,
+      "original_sha256": "8a551dfe684968f917f0eb5dee190e8b9b40bb1a17fcca651fa05cdd637fc998"
+    },
+    {
+      "image": "33",
+      "original": 124944,
+      "thumbnail1x": 21814,
+      "thumbnail2x": 61818,
+      "thumbnail3x": 113106,
+      "original_sha256": "3bd86b15590fb30f3409c6b2040d6ea003a72a79eee567f2f618cfb7c9f6972b"
+    },
+    {
+      "image": "34",
+      "original": 77270,
+      "thumbnail1x": 16382,
+      "thumbnail2x": 49608,
+      "thumbnail3x": 79824,
+      "original_sha256": "b5fb3ffbcf81398fcad0b8de904ec1daa52e9b77927cef0c80a4ff6854c06b90"
+    },
+    {
+      "image": "35",
+      "original": 159664,
+      "thumbnail1x": 28930,
+      "thumbnail2x": 100620,
+      "thumbnail3x": 176678,
+      "original_sha256": "bd620a935d0c179702502f6e4139ff41474d5805a466d22abeb40df366e1859f"
+    },
+    {
+      "image": "36",
+      "original": 770318,
+      "thumbnail1x": 38862,
+      "thumbnail2x": 151104,
+      "thumbnail3x": 324240,
+      "original_sha256": "c93089a700e59ef25b0dee2a324ae66ddf1bebf2d2f88fb660a584cd36ddfdc7"
+    },
+    {
+      "image": "38",
+      "original": 35236,
+      "thumbnail1x": 10406,
+      "thumbnail2x": 24732,
+      "thumbnail3x": 42796,
+      "original_sha256": "fed7ed023e5037e15bb9f17f89395e716528ef4b82f03bb9ca55da1d4108d055"
+    },
+    {
+      "image": "39",
+      "original": 95984,
+      "thumbnail1x": 17326,
+      "thumbnail2x": 53628,
+      "thumbnail3x": 103386,
+      "original_sha256": "366dcabdadf67186a4fccc8dfe5f87b914b9569324d24d72a87522cd3508b67e"
+    },
+    {
+      "image": "40",
+      "original": 51980,
+      "thumbnail1x": 12514,
+      "thumbnail2x": 33084,
+      "thumbnail3x": 58282,
+      "original_sha256": "be87c075958eebc05e29384d530ba5a52a722ec0d8b5770a7046bceba54c204c"
+    }
+  ],
+  "other": [
+    {
+      "file": "landing-page-puppy-600.webp",
+      "bytes": 170874,
+      "size": [
+        588,
+        600
+      ]
+    },
+    {
+      "file": "landing-page-puppy-1400.webp",
+      "bytes": 709610,
+      "size": [
+        1372,
+        1400
+      ]
+    },
+    {
+      "file": "landing-page-puppy-2100.webp",
+      "bytes": 1393322,
+      "size": [
+        2058,
+        2100
+      ]
+    },
+    {
+      "file": "corlene-pfp.webp",
+      "before": 4495,
+      "bytes": 2456
+    },
+    {
+      "file": "hamburger-menu.webp",
+      "before": 246,
+      "bytes": 142
+    },
+    {
+      "file": "julie-pfp.webp",
+      "before": 9117,
+      "bytes": 6626
+    },
+    {
+      "file": "logotype-white.webp",
+      "before": 12830,
+      "bytes": 6748
+    },
+    {
+      "file": "logotype.webp",
+      "before": 105849,
+      "bytes": 78222
+    },
+    {
+      "file": "stars.webp",
+      "before": 449,
+      "bytes": 222
+    },
+    {
+      "file": "web-icon.webp",
+      "before": 1630,
+      "bytes": 1516
+    }
+  ],
+  "totals": {
+    "original": 5800008,
+    "thumbnail1x": 818512,
+    "thumbnail2x": 2533234,
+    "thumbnail3x": 4501690
+  }
+}

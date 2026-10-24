@@ -92,13 +92,13 @@
 
     const openPreview = (photo) => {
         const image = photo?.querySelector("img");
-        const source = image?.getAttribute("src");
+        const source = image?.dataset.fullSrc || image?.getAttribute("src");
 
         if (!image || !source) {
             return;
         }
 
-        previewImage.src = image.currentSrc || source;
+        previewImage.src = source;
         previewImage.alt = image.alt;
         preview.showModal();
     };

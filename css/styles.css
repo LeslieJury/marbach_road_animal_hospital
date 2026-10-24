@@ -345,63 +345,6 @@ button a {
   CONTACT SECTION
 ================================================================================================*/
 
-#contact {
-    width: 100%;
-    min-height: 723px;
-    padding: 108px 24px 180px;
-    background-color: var(--white-color);
-    color: #1a1a1a;
-    scroll-margin-top: 100px;
-}
-
-#contact-heading {
-    margin: 0;
-    font-family: poppins, sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.contact-details {
-    display: grid;
-    grid-template-columns: 312fr 408fr 354fr;
-    gap: 10px;
-    max-width: 1094px;
-    margin: 152px auto 0;
-}
-
-.contact-detail { min-width: 0; text-align: center; container-type: inline-size; }
-.contact-icon {
-    height: 84px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 22px;
-}
-.contact-icon img { flex: none; max-width: none; }
-.contact-detail-title {
-    display: block;
-    margin: 0;
-    font-family: poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 29px;
-    white-space: nowrap;
-}
-.contact-detail p {
-    color: rgb(0 0 0 / 60%);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
-}
-a.contact-detail-title:hover { text-decoration: underline; }
-a.contact-detail-title:focus-visible {
-    outline: 2px solid var(--red-color);
-    outline-offset: 5px;
-    border-radius: 3px;
-}
-
 /* FOOTER */
 footer {
     width: 100%;
@@ -777,21 +720,3 @@ footer {
 }
 
 
-/* Stack contact details when the desktop columns become cramped. */
-@media (max-width: 1150px) {
-    #contact { min-height: 0; padding: 80px 24px 100px; }
-    #contact-heading { max-width: 580px; margin: 0 auto; font-size: 27px; line-height: 1.35; }
-    .contact-details { grid-template-columns: minmax(0, 1fr); gap: 56px; max-width: 408px; margin-top: 64px; }
-    .contact-icon { margin-bottom: 18px; }
-    .contact-detail-title { line-height: 1.6; }
-    .contact-detail p { margin-top: 4px; }
-}
-@media (max-width: 380px) {
-    #contact { padding-right: 20px; padding-left: 20px; }
-    #contact-heading { font-size: 25px; }
-}
-
-/* Keep every contact value and caption on one line without clipping.
-   Container units reduce type only when the card is narrower than the text. */
-.contact-detail-title { font-size: min(16px, 4cqi); white-space: nowrap; }
-.contact-detail p { font-size: min(14px, 4.2cqi); white-space: nowrap; }
