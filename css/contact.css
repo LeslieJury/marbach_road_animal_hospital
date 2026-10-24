@@ -42,19 +42,12 @@
     line-height: 29px;
     white-space: nowrap;
 }
-.contact-detail p {
+.contact-detail p:not(.contact-detail-title) {
     color: rgb(0 0 0 / 60%);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
 }
-a.contact-detail-title:hover { text-decoration: underline; }
-a.contact-detail-title:focus-visible {
-    outline: 2px solid var(--red-color);
-    outline-offset: 5px;
-    border-radius: 3px;
-}
-
 /* Stack contact details when the desktop columns become cramped. */
 @media (max-width: 800px) {
     #contact { min-height: 0; padding: 80px 24px 100px; }
@@ -62,17 +55,21 @@ a.contact-detail-title:focus-visible {
     .contact-details { grid-template-columns: minmax(0, 1fr); gap: 56px; max-width: 408px; margin-top: 64px; }
     .contact-icon { margin-bottom: 18px; }
     .contact-detail-title { line-height: 1.6; }
-    .contact-detail p { margin-top: 4px; }
+    .contact-detail p:not(.contact-detail-title) { margin-top: 4px; }
 }
 @media (max-width: 380px) {
     #contact { padding-right: 20px; padding-left: 20px; }
     #contact-heading { font-size: 25px; }
 }
 
-/* Keep every contact value and caption on one line without clipping.
-   Container units reduce type only when the card is narrower than the text. */
-.contact-detail-title { font-size: min(16px, 4cqi); white-space: nowrap; }
-.contact-detail p { font-size: min(14px, 4.2cqi); white-space: nowrap; }
+/* Consistent type across all three contact cards. */
+.contact-detail-title { font-size: 16px; white-space: nowrap; }
+.contact-detail p:not(.contact-detail-title) { font-size: 14px; white-space: nowrap; }
+/* Fixed-size text must be allowed to fit naturally on narrow phones. */
+@media (max-width: 450px) {
+    #contact .contact-detail-title,
+    #contact .contact-detail p:not(.contact-detail-title) { white-space: normal; }
+}
 /* Contact layout only: stack before its three columns become cramped. */
 @media (min-width: 801px) and (max-width: 1150px) {
     #contact .contact-details {
