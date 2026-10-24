@@ -79,3 +79,8 @@
         margin-top: 80px;
     }
 }
+/* Keep each part of the address intact on narrow phones. */
+@media (max-width: 450px) {
+    #contact .contact-address > span { display: block; white-space: nowrap; }
+    #contact .contact-address > .contact-address-separator { display: none; }
+}
